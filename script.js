@@ -26,6 +26,11 @@ function clear() {
   document.querySelector("#display").value = "";
 }
 
+function removeLastChar (){
+  let value = document.querySelector("#display").value;
+  let newValue = value.slice(0,-1);
+  document.querySelector("#display").value = newValue;
+}
 let buttons = document.querySelectorAll("button");
 
 buttons.forEach((button) => {
@@ -107,7 +112,7 @@ function keyPress(event) {
       appendToDisplay(event.key);
       break;
     case "Backspace":
-      clear();
+      removeLastChar();
       break;
     case "Delete":
       clear();
