@@ -136,3 +136,32 @@ if (keys) {
     keyPress(e);
   });
 }
+
+
+let firstOperand = ''
+let secondOperand = ''
+let currentOperation = null
+let shouldResetScreen = false
+
+
+function operate(operator, a, b) {
+  a = Number(a)
+  b = Number(b)
+  switch (operator) {
+    case '+':
+      return add(a, b)
+    case '-':
+      return subtract(a, b)
+    case '*':
+      return multiply(a, b)
+    case '/':
+      if (b === 0) return null
+      else return divide(a, b)
+    default:
+      return null
+  }
+}
+
+
+ let yolo= operate('-',2,2);
+ console.log(yolo);
