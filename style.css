@@ -36,12 +36,16 @@ body {
 }
 
 .display {
-    border: 1px solid green;
+    border: 5px solid black;
     border-radius: 8px;
     height: 84px;
     width: 513px;
-    order: -1;
     background-color: rgb(178, 185, 183);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 50px;
+    font-weight: 900;
 }
 
 #zero {
