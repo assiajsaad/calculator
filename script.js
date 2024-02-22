@@ -14,7 +14,53 @@ function divide(a, b) {
   return a / b;
 }
 
-console.log(`Add ${add(1,2)} adding 1 + 2`);
-console.log(`Subtract ${subtract(8,10)} subtracting 8 - 10`);
-console.log(`Multiply ${multiply(3,5)} multiply 3 * 5`);
-console.log(`Divide ${divide(-12,4)} divide 12 / 4`);
+function switchSign(){
+  let
+}
+
+
+function appendToDisplay(value) {
+  (document.querySelector("#display").value += value);
+}
+
+
+function clear() {
+  (document.querySelector("#display").value = "");
+}
+
+
+
+
+
+// let btnClear = document.querySelector(".clear");
+
+// btnClear.addEventListener("click", clear);
+
+// let numbersBtn = document.querySelectorAll(".number");
+
+// numbersBtn.forEach((number) => {
+//   number.addEventListener("click", () => {
+//     let disp = (document.querySelector("#display").value += number.value);
+//   });
+// });
+
+let buttons = document.querySelectorAll('button');
+
+buttons.forEach((button =>{
+  switch (button.className) {
+    case 'number':
+      button.addEventListener('click',()=>{
+        appendToDisplay(button.value);
+      })
+      break;
+    case 'clear':
+      button.addEventListener('click',()=>{
+        clear();
+      })
+      break;
+  
+    default:
+      break;
+  }
+}))
+
