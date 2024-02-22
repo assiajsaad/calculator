@@ -55,3 +55,79 @@ buttons.forEach((button) => {
       break;
   }
 });
+
+function keyPress(event) {
+  switch (event.key) {
+    case "1":
+      appendToDisplay(event.key);
+      break;
+    case "2":
+      appendToDisplay(event.key);
+      break;
+    case "3":
+      appendToDisplay(event.key);
+      break;
+    case "4":
+      appendToDisplay(event.key);
+      break;
+    case "5":
+      appendToDisplay(event.key);
+      break;
+    case "6":
+      appendToDisplay(event.key);
+      break;
+    case "7":
+      appendToDisplay(event.key);
+      break;
+    case "8":
+      appendToDisplay(event.key);
+      break;
+    case "9":
+      appendToDisplay(event.key);
+      break;
+    case "0":
+      appendToDisplay(event.key);
+      break;
+    case "+":
+      appendToDisplay(event.key);
+      break;
+    case "-":
+      appendToDisplay(event.key);
+      break;
+    case "/":
+      appendToDisplay(event.key);
+      break;
+    case "*":
+      appendToDisplay(event.key);
+      break;
+    case "*":
+      appendToDisplay(event.key);
+      break;
+    case "*":
+      appendToDisplay(event.key);
+      break;
+    case "Backspace":
+      clear();
+      break;
+    case "Delete":
+      clear();
+      break;
+    case ".":
+      appendToDisplay(event.key);
+      break;
+    case "Enter":
+      // Code for equals
+      break;
+
+    default:
+      break;
+  }
+}
+
+let keys = document.querySelector("body");
+
+if (keys) {
+  keys.addEventListener("keydown", function (e) {
+    keyPress(e);
+  });
+}
